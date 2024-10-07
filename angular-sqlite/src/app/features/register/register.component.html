@@ -1,0 +1,31 @@
+<ActionBar title="Grocery Shonny Store - Register"></ActionBar>
+
+<AbsoluteLayout>
+    <StackLayout top="50" class="p-4 w-full" [formGroup]="registerForm" (ngSubmit)="onSubmitForm()">
+  
+      <Image src="~/assets/Load-image.jpg" height="200" width="200" />
+    
+      <StackLayout class="mb-2">
+    
+        <Label class="text-base font-medium"> Correo Electronico </Label>
+        <TextField formControlName="email" hint="Correo electronico" class="-border" />
+    
+      </StackLayout>
+    
+      <StackLayout class="mb-2">
+    
+        <Label class="text-base font-medium"> Password </Label>
+        <TextField formControlName="password" hint="Password" secure="true" class="-border" />
+    
+      </StackLayout>
+    
+      <Button text="Registrar" type="submit" (tap)="onSubmitForm()" class="-primary -rounded-sm" height="50"> </Button>
+  
+      <StackLayout orientation="horizontal" class="mb-2">
+        <Label text="Ya tienes cuenta ? "> </Label>
+        <Label text="Ir a Login" color="blue" (tap)="goToLogin()"> </Label>
+      </StackLayout>
+  
+  
+    </StackLayout>
+  </AbsoluteLayout>

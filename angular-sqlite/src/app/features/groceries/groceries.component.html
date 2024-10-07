@@ -1,0 +1,40 @@
+<ActionBar title="Grocery Shonny Store - CRUD List"></ActionBar>
+
+<DockLayout stretchLastChild="false">
+
+  <ListView dock="top" [items]="groceryList">
+    <ng-template let-item="item" let-i="index">
+      <StackLayout
+        id="delete-view"
+        col="1"
+        (tap)="delete($event)"
+        class="delete-view"
+      >
+        <Label [text]="item.name" class="p-15"></Label>
+      </StackLayout>
+    </ng-template>
+  </ListView>
+
+  <GridLayout dock="bottom" row="0" columns="*, *, *" class="add-bar">
+    <TextField
+      #groceryTextField
+      [(ngModel)]="grocery"
+      hint="Enter a grocery item"
+      col="0"
+    ></TextField>
+    <Button
+      class="-primary -rounded-sm"
+      height="50"
+      (tap)="add()"
+      text="Create"
+      col="1"
+    ></Button>
+    <Button
+      class="-primary -rounded-sm"
+      height="50"
+      (tap)="logout()"
+      text="Log Out"
+      col="2"
+    ></Button>
+  </GridLayout>
+</DockLayout>

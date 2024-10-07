@@ -1,0 +1,66 @@
+{
+  "name": "@nativescript/balder-development",
+  "main": "./src/main.ts",
+  "version": "8.0.7",
+  "author": "Canguro Programming",
+  "description": "NativeScript Application for Balder Canguro",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "App_Resources",
+    "hooks",
+    "src",
+    "tools",
+    "!tools/assets",
+    ".editorconfig",
+    "references.d.ts",
+    "tsconfig.json"
+  ],
+  "keywords": [
+    "nativescript",
+    "mobile",
+    "angular",
+    "{N}",
+    "template"
+  ],
+  "repository": "",
+  "bugs": {
+    "url": "https://github.com/NativeScript/NativeScript/issues"
+  },
+  "dependencies": {
+    "@angular/animations": "~15.1.0",
+    "@angular/common": "~15.1.0",
+    "@angular/compiler": "~15.1.0",
+    "@angular/core": "~15.1.0",
+    "@angular/forms": "~15.1.0",
+    "@angular/platform-browser": "~15.1.0",
+    "@angular/platform-browser-dynamic": "~15.1.0",
+    "@angular/router": "~15.1.0",
+    "@nativescript-community/ui-material-snackbar": "^7.2.65",
+    "@nativescript/angular": "^15.0.0",
+    "@nativescript/core": "~8.4.0",
+    "@nativescript/tailwind": "^2.0.1",
+    "@nativescript/theme": "~3.0.1",
+    "nativescript-localstorage": "^2.0.2",
+    "nativescript-sqlite": "^2.8.6",
+    "nativescript-ui-listview": "^15.2.3",
+    "nativescript-ui-sidedrawer": "^15.2.3",
+    "rxjs": "^7.5.0",
+    "tailwindcss": "^3.2.4",
+    "zone.js": "~0.11.5"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~15.1.0",
+    "@angular/compiler-cli": "~15.1.0",
+    "@nativescript/android": "8.8.4",
+    "@nativescript/ios": "~8.4.0",
+    "@nativescript/types": "~8.4.0",
+    "@nativescript/webpack": "~5.0.0",
+    "@ngtools/webpack": "~15.1.0",
+    "typescript": "~4.8.4"
+  },
+  "private": "true",
+  "readme": "NativeScript Application"
+}

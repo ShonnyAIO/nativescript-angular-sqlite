@@ -1,0 +1,71 @@
+<ActionBar title="Grocery Shonny Store - Login"></ActionBar>
+
+<AbsoluteLayout>
+  <StackLayout top="50" class="p-4 w-full" [formGroup]="loginForm" (ngSubmit)="onSubmitForm()">
+
+    <Image src="~/assets/Load-image.jpg" height="200" width="200" />
+  
+    <StackLayout class="mb-2">
+  
+      <Label class="text-base font-medium"> Correo Electronico </Label>
+      <TextField formControlName="email" hint="Correo electronico" class="-border" />
+  
+    </StackLayout>
+  
+    <StackLayout class="mb-2">
+  
+      <Label class="text-base font-medium"> Password </Label>
+      <TextField formControlName="password" hint="Password" secure="true" class="-border" />
+  
+    </StackLayout>
+  
+    <Button text="Iniciar Sesión" type="submit" (tap)="onSubmitForm()" class="-primary -rounded-sm" height="50"> </Button>
+
+    <StackLayout orientation="horizontal" class="mb-2">
+      <Label text="No tienes cuenta ? "> </Label>
+      <Label text="Registrate" color="blue" (tap)="goToRegister()"> </Label>
+    </StackLayout>
+
+
+  </StackLayout>
+</AbsoluteLayout>
+
+
+<!-- <ListView
+    height="100%"
+    separatorColor="transparent"
+    [items]="flicks"
+    (itemTap)="onFlickTap($event)">
+    <ng-template let-item="item">
+        <GridLayout
+            height="280"
+            borderRadius="10"
+            class="bg-secondary"
+            rows="*, auto, auto"
+            columns="*"
+            margin="5 10"
+            padding="0">
+          <Image
+            row="0"
+            margin="0"
+            stretch="aspectFill"
+            [src]="item.image"></Image>
+          <Label
+            row="1"
+            margin="10 10 0 10"
+            fontWeight="700"
+            class="text-primary"
+            fontSize="18"
+            [text]="item.title"></Label>
+          <Label
+            row="2"
+            margin="0 10 10 10"
+            class="text-secondary"
+            fontSize="14"
+            textWrap="true"
+            [text]="item.description"></Label>
+        </GridLayout>
+      </ng-template>
+
+</ListView>
+ -->
